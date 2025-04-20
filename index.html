@@ -132,13 +132,13 @@
 
         // Add JavaScript for mobile menu toggle here if needed
         // Example (requires the menu div to exist and have an ID like 'mobile-menu'):
-        // const menuButton = document.querySelector('header button.md\\:hidden');
-        // const mobileMenu = document.getElementById('mobile-menu'); // Assuming you add id="mobile-menu" to the menu div
-        // if (menuButton && mobileMenu) {
-        //     menuButton.addEventListener('click', () => {
-        //          mobileMenu.classList.toggle('hidden'); // Toggle visibility
-        //     });
-        // }
+        const menuButton = document.querySelector('header button.md\\:hidden');
+        const mobileMenu = document.getElementById('mobile-menu'); // Assuming you add id="mobile-menu" to the menu div
+        if (menuButton && mobileMenu) {
+            menuButton.addEventListener('click', () => {
+                 mobileMenu.classList.toggle('hidden'); // Toggle visibility
+            });
+        }
     </script>
 
 </body>
