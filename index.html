@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] - Personal CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Optional: Add custom styles or override Tailwind defaults here */
+        /* Tailwind uses the 'Inter' font by default in its sans-serif stack */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Add smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Simple animation for section headers */
+        h2 {
+            transition: color 0.3s ease-in-out;
+        }
+        h2:hover {
+            color: #3b82f6; /* Example: Tailwind's blue-500 */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 leading-normal">
+
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-700">[Your Name]</div>
+            <div class="space-x-4 hidden md:flex">
+                <a href="#about" class="text-gray-600 hover:text-blue-500 transition duration-300">About</a>
+                <a href="#experience" class="text-gray-600 hover:text-blue-500 transition duration-300">Experience</a>
+                <a href="#education" class="text-gray-600 hover:text-blue-500 transition duration-300">Education</a>
+                <a href="#skills" class="text-gray-600 hover:text-blue-500 transition duration-300">Skills</a>
+                <a href="#interests" class="text-gray-600 hover:text-blue-500 transition duration-300">Interests</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-500 transition duration-300">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <section id="about" class="mb-16 scroll-mt-16">
+            <div class="flex flex-col md:flex-row items-center bg-white p-8 rounded-lg shadow-lg">
+                <div class="md:w-1/4 mb-6 md:mb-0 md:mr-8 flex-shrink-0">
+                    <img src="https://placehold.co/200x200/E2E8F0/A0AEC0?text=Profile+Pic"
+                         alt="Profile Picture of [Your Name]"
+                         class="rounded-full w-40 h-40 md:w-48 md:h-48 mx-auto object-cover border-4 border-gray-200 shadow-md"
+                         onerror="this.onerror=null; this.src='https://placehold.co/200x200/E2E8F0/A0AEC0?text=Profile+Pic';">
+                    </div>
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl font-bold text-gray-800 mb-2">[Your Name]</h1>
+                    <p class="text-xl text-blue-600 font-medium mb-4">[Your Current Role or Headline, e.g., Software Engineer | Data Analyst | Student]</p>
+                    <p class="text-gray-600">
+                        [Write a brief 2-4 sentence summary about yourself. Mention your key skills, experience level, and career interests. Extract this from your LinkedIn 'About' section or write a new one.]
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="mb-16 scroll-mt-16">
+            <h2 class="text-3xl font-semibold mb-8 border-b-2 border-blue-500 pb-2 text-gray-700">Experience</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6 transition transform hover:scale-[1.02] duration-300">
+                <h3 class="text-xl font-semibold text-gray-800">[Job Title]</h3>
+                <p class="text-md text-blue-600 font-medium mb-1">[Company Name] | [Location, e.g., City, State or Remote]</p>
+                <p class="text-sm text-gray-500 mb-3">[Start Date] - [End Date or Present]</p>
+                <ul class="list-disc list-inside text-gray-600 space-y-1">
+                    <li>[Responsibility or achievement 1. Use action verbs.]</li>
+                    <li>[Responsibility or achievement 2.]</li>
+                    <li>[Add more bullet points as needed.]</li>
+                </ul>
+            </div>
+            </section>
+
+        <section id="education" class="mb-16 scroll-mt-16">
+            <h2 class="text-3xl font-semibold mb-8 border-b-2 border-blue-500 pb-2 text-gray-700">Education</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6 transition transform hover:scale-[1.02] duration-300">
+                <h3 class="text-xl font-semibold text-gray-800">[Degree Name, e.g., Bachelor of Science in Computer Science]</h3>
+                <p class="text-md text-blue-600 font-medium mb-1">[Institution Name]</p>
+                <p class="text-sm text-gray-500 mb-3">[Year Graduated or Expected Graduation Year]</p>
+                <p class="text-gray-600">[Optional: Add relevant coursework, thesis title, honors, or activities.]</p>
+            </div>
+            </section>
+
+        <section id="skills" class="mb-16 scroll-mt-16">
+            <h2 class="text-3xl font-semibold mb-8 border-b-2 border-blue-500 pb-2 text-gray-700">Skills</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">[Skill 1, e.g., Python]</span>
+                    <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">[Skill 2, e.g., JavaScript]</span>
+                    <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">[Skill 3, e.g., Project Management]</span>
+                    <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">[Skill 4, e.g., Data Analysis]</span>
+                    <span class="bg-pink-100 text-pink-800 text-sm font-medium px-3 py-1 rounded-full">[Skill 5, e.g., Communication]</span>
+                    <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">[Add more skills...]</span>
+                    </div>
+                </div>
+        </section>
+
+        <section id="interests" class="mb-16 scroll-mt-16">
+            <h2 class="text-3xl font-semibold mb-8 border-b-2 border-blue-500 pb-2 text-gray-700">Interests</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <p class="text-gray-600">
+                    [Briefly mention some of your professional or personal interests. Examples: Open-source contribution, AI ethics, hiking, photography, learning new languages, etc. This adds a personal touch.]
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="scroll-mt-16">
+            <h2 class="text-3xl font-semibold mb-8 border-b-2 border-blue-500 pb-2 text-gray-700">Contact</h2>
+            <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                <p class="text-lg text-gray-700 mb-4">Feel free to reach out!</p>
+                <p class="text-gray-600 mb-2">
+                    Email: <a href="mailto:[Your Email Address]" class="text-blue-600 hover:underline">[Your Email Address]</a>
+                </p>
+                <p class="text-gray-600 mb-2">
+                    LinkedIn: <a href="[Your LinkedIn Profile URL]" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">[Your LinkedIn Profile URL]</a>
+                </p>
+                </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 mt-16 py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; <span id="current-year"></span> [Your Name]. All rights reserved.</p>
+            </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Basic Mobile Menu Toggle (Example)
+        // const menuButton = document.querySelector('header button.md\\:hidden');
+        // const mobileMenu = document.querySelector('header .md\\:hidden.hidden'); // Select the hidden menu div
+        // if (menuButton && mobileMenu) {
+        //     menuButton.addEventListener('click', () => {
+        //          mobileMenu.classList.toggle('hidden'); // Toggle visibility
+        //     });
+        // }
+        // Note: For a production site, you might want a more robust menu solution.
+    </script>
+
+</body>
+</html>
