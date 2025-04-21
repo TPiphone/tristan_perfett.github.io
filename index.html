@@ -56,7 +56,7 @@
             <div class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm mb-6"> <h3 class="text-lg md:text-xl font-semibold text-slate-800">Data Engineer</h3>
                 <p class="text-base text-blue-600 font-medium mb-1">Spatialege | Stellenbosch, South Africa</p>
                 <p class="text-sm text-slate-500 mb-3">
-                    <span id="current-start-date">January 2025</span> - [End Date or Present] </p>
+                    January 2025 - <span id="current-end-date">Present</span> </p>
                 <ul class="list-disc list-outside ml-5 text-slate-600 space-y-2 text-base"> <li>[Responsibility or achievement 1. Use action verbs relevant to data engineering, e.g., Designed ETL pipelines, Optimized data warehouses...]</li>
                     <li>[Responsibility or achievement 2.]</li>
                     <li>[Add more bullet points as needed.]</li>
@@ -128,28 +128,22 @@
     </footer>
 
     <script>
-        // --- Script to set current date for a specific element ---
+        // --- Script to set current date for the end date span ---
         try {
-            // Get the current date
             const currentDate = new Date();
-
-            // Format the date as "Month Year" (e.g., "April 2025")
-            // Adjust 'en-US' locale if needed for different language month names
             const options = { year: 'numeric', month: 'long' };
-            const formattedDate = currentDate.toLocaleDateString('en-US', options);
+            const formattedDate = currentDate.toLocaleDateString('en-US', options); // e.g., "April 2025"
 
-            // Select the element by its ID
-            const dateElement = document.getElementById('current-start-date');
+            // *** MODIFIED: Target the new ID ***
+            const dateElement = document.getElementById('current-end-date');
 
-            // Update the element's text content if it exists
             if (dateElement) {
                 dateElement.textContent = formattedDate;
             } else {
-                // Log a warning if the element isn't found, helps debugging
-                console.warn("Element with ID 'current-start-date' not found.");
+                 // *** MODIFIED: Updated warning message ***
+                console.warn("Element with ID 'current-end-date' not found.");
             }
         } catch (error) {
-            // Log errors if the script fails
             console.error("Error setting current date:", error);
         }
         // --- End of current date script ---
@@ -167,19 +161,10 @@
         }
         // --- End of footer year script ---
 
-
         // --- Add JavaScript for mobile menu toggle here if needed ---
-        // Example (requires the menu div to exist and have an ID like 'mobile-menu'):
-        // const menuButton = document.querySelector('header button.md\\:hidden');
-        // const mobileMenu = document.getElementById('mobile-menu'); // Assuming you add id="mobile-menu" to the menu div
-        // if (menuButton && mobileMenu) {
-        //     menuButton.addEventListener('click', () => {
-        //          mobileMenu.classList.toggle('hidden'); // Toggle visibility
-        //     });
-        // }
+        // ... (mobile menu script placeholder) ...
         // --- End of mobile menu script ---
     </script>
-
 
 </body>
 </html>
